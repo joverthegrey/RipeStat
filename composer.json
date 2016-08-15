@@ -1,7 +1,7 @@
 {
-    "name": "jover/ripe-db-query",
+    "name": "jover/ripe-stat",
     "version" : "0.1.0",
-    "description": "Simple wrapper for Ripe DB RESTlike search queries, it returns a SimpleXMLElement",
+    "description": "Wrapper for the Ripe Stat API",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -12,9 +12,10 @@
         }
     ],
     "require": {
-        "zendframework/zend-http": "^2.5"
+        "zendframework/zend-http": "^2.5",
+        "zendframework/zend-json": "^3.0"
     },
     "autoload": {
-        "psr-4": {"RipeDB\\": "src/"}
+        "psr-4": {"RipeStat\\": "src/"}
     }
 }
