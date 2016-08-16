@@ -58,7 +58,7 @@ class AbuseContactFinder
         $url = $this->_url . "?resource=$searchterm";
 
         if (!is_null($this->_appid)) {
-            $url = $url . "+appid=" . $this->_appid;
+            $url = $url . "&sourceapp=" . $this->_appid;
         }
 
         $this->_httpclient->setUri($url);
