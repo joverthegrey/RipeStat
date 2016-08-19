@@ -55,10 +55,10 @@ class AbuseContactFinder
         $result = null;
 
         // construct query url
-        $url = $this->_url . "?resource=$searchterm";
+        $url = $this->_url . "?resource=" . urlencode($searchterm);
 
         if (!is_null($this->_appid)) {
-            $url = $url . "&sourceapp=" . $this->_appid;
+            $url = $url . "&sourceapp=" . urlencode($this->_appid);
         }
 
         $this->_httpclient->setUri($url);
