@@ -19,3 +19,6 @@ Simple PHP wrapper around [Ripe AbuseContactFinder](https://stat.ripe.net/docs/d
      $data = $rs->get('ip, asin, or prefix');
      
      print_r($data);
+     
+### Example
+see [example.php](example/example.php)
